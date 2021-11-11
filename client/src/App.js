@@ -1,22 +1,21 @@
 import logo from "./logo.svg";
-import "./App.css";
+import "./styles/App.css";
 import React from "react";
 import { useState, useEffect } from "react";
+import MessageBox from "./components/messageBox";
 
 const App = () => {
   const [date, setDate] = useState(null);
   const [user, setUser] = useState(null);
   const [message, setMessage] = useState(null);
 
-  useEffect(()=>{
-    fetch("")
-  })
 
   return (
     <div className="App">
       <h1>Hello, Chat!</h1>
-      <textarea  name="messageBox" rows="10" cols="50" />
-      <form action="/message" method="post">
+      <MessageBox/>
+      {/* <textarea  name="messageBox" rows="10" cols="50" /> */}
+      <form action="/message" method="POST">
         <input
           type="text"
           name="username"
