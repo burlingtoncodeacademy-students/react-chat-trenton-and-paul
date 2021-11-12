@@ -5,13 +5,11 @@ import { useState, useEffect } from "react";
 import MessageBox from "./components/messageBox";
 
 const App = () => {
-  const [date, setDate] = useState(null);
-  const [user, setUser] = useState(null);
-  const [message, setMessage] = useState(null);
+  // const [date, setDate] = useState(null);
+  // const [user, setUser] = useState(null);
+  // const [message, setMessage] = useState(null);
 
-  const onClick = ()=> {
-
-  }
+ 
 
   return (
     <div className="App">

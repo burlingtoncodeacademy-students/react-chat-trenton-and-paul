@@ -8,21 +8,25 @@ export default function MessageBox(props){
 
 useEffect(()=>{
  //fetches information from a local API route
- fetch("http://localhost:8000/allmessages")
+ fetch("/allmessages")
  .then((res)=>{
      return res.json()
  })
  .then((json)=>{
-     setAllMessages(json)
+    setAllMessages((json))
  })
 }, [])
+console.log(allMessages)
 
 return (
-<div id="chatbox">
- {allMessages.map((entry) =>{
-     <p>{entry.username}</p>,
-     <p>{entry.message}</p>
- })}
-</div>
+    //the chat box
+<center> <div id="chatbox">
+ {allMessages.map((entry) =>{ return(
+     <div>
+     <p>{entry.author}</p>
+     <p>{entry.body}</p>
+     </div>
+ )})}
+</div></center>
 )
 }
