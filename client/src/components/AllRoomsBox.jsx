@@ -2,9 +2,9 @@
 import { useState, useEffect } from "react";
 import "../styles/App.css"
 
-export default function MessageBox(props){
+export default function AllRooms(props){
     //uses state to hold the result of the fetch
-    const [allMessages, setAllMessages] = useState([])
+    const [allRooms, setAllRooms] = useState([])
 
 // useEffect(()=>{
 //  //fetches information from a local API route
@@ -18,10 +18,9 @@ export default function MessageBox(props){
 // }, [])
 
 return (
- <center>
-<div id="chatbox" >Message Board</div></center> 
+ 
+<div id="all-Rooms" >All Rooms</div> 
 
 )
 
 }
-

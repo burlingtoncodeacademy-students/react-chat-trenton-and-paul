@@ -3,18 +3,19 @@ import "./styles/App.css";
 import React from "react";
 import { useState, useEffect } from "react";
 import MessageBox from "./components/messageBox";
+import AllRooms from "./components/AllRoomsBox";
 
 const App = () => {
   const [date, setDate] = useState(null);
   const [user, setUser] = useState(null);
   const [message, setMessage] = useState(null);
 
-
   return (
     <div className="App">
       <h1>Hello, Chat!</h1>
-      <MessageBox/>
-      {/* <textarea  name="messageBox" rows="10" cols="50" /> */}
+      <MessageBox />
+      {/* <textarea name="messageBox" rows="10" cols="50" /> */}
+      <AllRooms />
       <form action="/message" method="POST">
         <input
           type="text"

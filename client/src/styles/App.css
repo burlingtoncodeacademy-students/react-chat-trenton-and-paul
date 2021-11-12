@@ -37,12 +37,22 @@
   }
 }
 
-#chatbox{
+#chatbox {
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
   border: black solid 2px;
-  width: 300px;
+  width: 500px;
+  height: 300px;
+}
+
+#allRooms {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border: black solid 2px;
+  width: 250px;
   height: 300px;
 }
