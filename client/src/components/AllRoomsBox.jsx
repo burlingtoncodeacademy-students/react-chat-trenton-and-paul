@@ -19,8 +19,24 @@ export default function AllRooms(props){
 
 return (
  
-<div id="all-Rooms" >All Rooms</div> 
+<div id="all-Rooms" >
+    <ul>
+        <a href="/mainroom.jsx"><li>Main</li></a>
+        <a href="/html/gameroom.jsx"><li>Game Chat</li></a>
+        <a href="/html/fishroom.jsx"><li>Fish Chat</li></a>
+        </ul>
+    </div> 
 
-)
+
+  );
 
 }
+
+
+
+
+
+  
+    
+
+

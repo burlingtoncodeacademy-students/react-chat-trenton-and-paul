@@ -13,7 +13,11 @@ const App = () => {
   return (
     <div className="App">
       <h1>Hello, Chat!</h1>
-      <MessageBox />
+      <div id="BoxContainer">
+        <MessageBox />
+
+        <AllRooms />
+      </div>
       <form action="/message" method="POST">
         <input
           type="text"

@@ -36,15 +36,21 @@
     transform: rotate(360deg);
   }
 }
+#BoxContainer {
+  display: flex;
+  flex-direction: row;
+}
 
 #chatbox {
   display: flex;
+  flex-direction: column;
+  justify-content: left;
   border: black solid 2px;
   width: 500px;
   height: 300px;
 }
 
-#allRooms {
+#all-Rooms {
   display: flex;
   text-align: center;
   align-items: center;
@@ -52,4 +58,12 @@
   border: black solid 2px;
   width: 250px;
   height: 300px;
+}
+
+.title {
+  display: block;
+  margin: 0, auto;
+  padding: 0;
+  text-align: center;
+  border: none;
 }
