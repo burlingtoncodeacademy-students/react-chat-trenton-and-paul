@@ -1,7 +1,11 @@
 import React from "react"
+import AllRooms from "./AllRoomsBox"
+
 
 export default function MainRoom() {
     return (
-        <h1>main room</h1>
+        <div>
+      <h1>Hello, Chat!</h1>
+      </div>
     )
 }
