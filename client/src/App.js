@@ -6,10 +6,27 @@ import MessageBox from "./components/messageBox";
 import AllRooms from "./components/AllRoomsBox";
 
 const App = () => {
-  // const [date, setDate] = useState(null);
-  // const [user, setUser] = useState(null);
-  // const [message, setMessage] = useState(null);
+  // useEffect(()=> {
+  // function refreshTimer (){
+  //   idTimer = setInterval(tick, 1000);
 
+  //   async function tick() {
+  //     let minutes = Math.floor(count / 60);
+  //     let seconds = count % 60;
+  //     if (seconds < 10) {
+  //       console.log(`${minutes}:0${seconds}`)
+  //     } else {
+  //     console.log(`${minutes}:${seconds}`)
+  //     }
+  //     setCount(count +1)
+  //     while(count >= 10){
+  //       clearInterval(idTimer);
+  //     }
+  //   }
+  // }
+  // refreshTimer()
+  // }
+  // )
   return (
     <div className="App">
       <h1>Hello, Chat!</h1>

@@ -5,6 +5,17 @@ import "../styles/App.css"
 export default function MessageBox(props){
     //uses state to hold the result of the fetch
     const [allMessages, setAllMessages] = useState([])
+    const [count, setCount] = useState(0);
+  // const [user, setUser] = useState(null);
+  // const [message, setMessage] = useState(null);
+
+
+
+// setInterval(()=>{
+//   setCount(count +1)
+// },10000 )
+
+
 
 useEffect(()=>{
  //fetches information from a local API route
@@ -16,7 +27,7 @@ useEffect(()=>{
     setAllMessages((json))
  })
 }, [])
-console.log(allMessages)
+
 
 return (
     //the chat box
