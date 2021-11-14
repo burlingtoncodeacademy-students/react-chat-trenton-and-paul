@@ -1,10 +1,10 @@
 import "./styles/App.css"
-
 import React from "react";
 import { useState, useEffect } from "react";
 import MessageBox from "./MessageBox";
 
 import App from "../App";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   // useEffect(()=> {
@@ -33,8 +33,10 @@ const Home = () => {
       <h1>Hello, Chat!</h1>
       <div id="BoxContainer">
         <MessageBox />
-
-        <App/>
+        <div id="link-box">
+        <Link to="/fishroom">Fish room</Link>
+        <Link to="/gameroom">Game room</Link>
+        </div>
       </div>
       <form action="/message" method="POST">
         <input

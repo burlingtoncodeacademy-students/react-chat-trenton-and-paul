@@ -18,21 +18,6 @@ module.exports = MessageSchema
 
 
 
-// mongoose.connect("mongodb://localhost:27017/message's", {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true,
-// });
-// const db = mongoose.connection;
-// //error handling
-// db.on("error", console.error.bind(console, "connection error"));
-
-
-// //create an async function to ask for user input and await the database connection.
-// //start function with a schema
-// async function start(){
- 
-
-
 
 
 
