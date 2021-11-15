@@ -1,4 +1,3 @@
-
 //imports
 const mongoose = require("mongoose");
 
@@ -7,19 +6,8 @@ const mongoose = require("mongoose");
 let MessageSchema = new mongoose.Schema({
   when: Date,
   author: String,
-  body: String
-})
+  body: String,
+});
 
 //exporting schema
-module.exports = MessageSchema
-
-
-
-
-
-
-
-
-
-
-
+module.exports = MessageSchema;

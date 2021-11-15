@@ -8,21 +8,19 @@ import Gameroom from "./components/Gameroom";
 import Home from "./components/Home";
 
 export default function App(props) {
-
+  //routes to the other chat boxes and back to home
   return (
-      <div>
-<BrowserRouter>
-{/* Routes is the container for all of our potential routes */}
-<Routes>
-    {/* Route is each individual route; we will utilize the path and element prop. 
+    <div>
+      <BrowserRouter>
+        {/* Routes is the container for all of our potential routes */}
+        <Routes>
+          {/* Route is each individual route; we will utilize the path and element prop. 
  Path reflects the URL path, element is where we render our component */}
-    <Route path="/" element={<Home/>}/>
-    <Route path="/fishroom" element={<Fishroom/>}/>
-    <Route path="/gameroom" element={<Gameroom/>}/>
-
-</Routes>
-</BrowserRouter>
-</div>
+          <Route path="/" element={<Home />} />
+          <Route path="/fishroom" element={<Fishroom />} />
+          <Route path="/gameroom" element={<Gameroom />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
-

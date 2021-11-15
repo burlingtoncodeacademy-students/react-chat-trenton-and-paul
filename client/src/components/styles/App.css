@@ -1,55 +1,32 @@
+/* wrapping div for page center */
 .App {
   text-align: center;
+  background-color: burlywood;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* all pages  */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* the page wrapping div */
 #BoxContainer {
   display: flex;
   flex-direction: row;
+  margin: 10px;
 }
 
+/* styling for the chat box  */
 #chatbox {
   display: flex;
   flex-direction: column;
   justify-content: left;
   border: black solid 2px;
-  width: 500px;
+  width: 400px;
   height: 300px;
+  font-family: 'Shalimar', cursive;
+
 }
 
+/* styling for the link box */
 #link-box {
   display: flex;
   flex-direction: column;
@@ -60,12 +37,46 @@
   border: black solid 2px;
   width: 250px;
   height: 300px;
+  background-color: gray;
+  font-family: 'Shalimar', cursive;
+  margin-left: 10px;
 }
 
+/* styling for the title  */
 .title {
   display: block;
   margin: 0, auto;
   padding: 0;
   text-align: center;
   border: none;
+}
+
+#button-wrapper{
+  display: flex;
+
+  font-family: 'Shalimar', cursive;
+  
+}
+
+.input{
+  margin: 10px;
+}
+
+#fishwrapper{
+  background-color: aqua;
+}
+
+#fishchatbox{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  border: black solid 2px;
+  width: 400px;
+  height: 300px;
+  font-family: 'Shalimar', cursive;
+  background-color: rgb(26, 143, 252);
+}
+
+#gamechatwrapper{
+  background-color: chartreuse;
 }

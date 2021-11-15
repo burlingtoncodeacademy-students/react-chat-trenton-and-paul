@@ -4,31 +4,30 @@ import "./styles/App.css";
 
 export default function MessageBox(props) {
   //uses state to hold the result of the fetch
-  const [fishMessages, setFishMessages] = useState([]);
+  const [gameMessages, setGameMessages] = useState([]);
   const [count, setCount] = useState(0);
-
   // setInterval(()=>{
   //   setCount(count +1)
   // },10000 )
 
   useEffect(() => {
     //fetches information from a local API route
-    fetch("/fishmessages")
+    fetch("/gamemessages")
       .then((res) => {
         return res.json();
       })
+      //setting fish messages to the collected json file
       .then((json) => {
-        //setting fish messages to the collected json file
-        setFishMessages(json);
+        setGameMessages(json);
       });
   }, []);
 
   return (
-    //the chat box
+    //the game chat box
     <center>
       {" "}
-      <div id="fishchatbox">
-        {fishMessages.map((entry) => {
+      <div id="chatbox">
+        {gameMessages.map((entry) => {
           return (
             <div>
               {/* pulling in the author and the message into the chat box */}
