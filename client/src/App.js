@@ -17,8 +17,8 @@ export default function App(props) {
           {/* Route is each individual route; we will utilize the path and element prop. 
  Path reflects the URL path, element is where we render our component */}
           <Route path="/" element={<Home />} />
-          <Route path="/fishroom" element={<Fishroom />} />
-          <Route path="/gameroom" element={<Gameroom />} />
+          <Route path="/Fishroom" element={<Fishroom />} />
+          <Route path="/Gameroom" element={<Gameroom />} />
         </Routes>
       </BrowserRouter>
     </div>
