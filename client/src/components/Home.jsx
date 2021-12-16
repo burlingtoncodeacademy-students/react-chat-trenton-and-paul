@@ -13,8 +13,8 @@ const Home = () => {
     <div id="BoxContainer">
       <MessageBox />
       <div id="link-box">
-        <Link to="/fishroom">Fish room</Link>
-        <Link to="/gameroom">Game room</Link>
+        <Link to="/Fishroom">Fish room</Link>
+        <Link to="/Gameroom">Game room</Link>
       </div>
     </div>
     <div id="button-wrapper">

@@ -100,6 +100,10 @@ app.post("/gamemessage", async (req, res) => {
   res.redirect("/GameRoom");
 });
 
+app.get("*", (req,res)=>{
+  res.sendFile(path.resolve(staticDir))
+})
+
 app.listen(port, () => {
   console.log("listening on port: " + port);
 });
