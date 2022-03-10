@@ -8,7 +8,7 @@ const Home = () => {
     return(
   //wrapping page div for style
   <div className="App">
-    <h1>Hello, Chat!</h1>
+    <h1>Hello, Chatters!</h1>
     {/* wrapping container that holds the chat box and the link box */}
     <div id="BoxContainer">
       <MessageBox />
