@@ -73,7 +73,7 @@ app.post("/fishmessage", async (req, res) => {
   //saving the new entry to the Model
   await newMessage.save();
   //redirecting to the home page
-  res.redirect("/Fishroom");
+  res.redirect("/FishRoom");
 });
 
 //GAME MESSAGES
@@ -97,7 +97,7 @@ app.post("/gamemessage", async (req, res) => {
   //saving the new entry to the Model
   await newMessage.save();
   //redirecting to the home page
-  res.redirect("/Gameroom");
+  res.redirect("/GameRoom");
 });
 
 app.get("*", (req,res)=>{
